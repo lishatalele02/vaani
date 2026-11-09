@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.SamajhSakhi" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#F7FAFA</item>
+    </style>
+</resources>

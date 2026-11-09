@@ -1,0 +1,28 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: backend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip, cache-dependency-path: backend/requirements.txt }
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q          # Gnani calls are faked: no key or credits needed
+      - run: python scripts/intent_report.py
+      - uses: actions/upload-artifact@v4
+        with: { name: intent-accuracy-report, path: docs/INTENT_ACCURACY.md }
+
+  android:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: android } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "17" }
+      - uses: gradle/actions/setup-gradle@v4
+      - run: chmod +x gradlew && ./gradlew testDebugUnitTest assembleDebug

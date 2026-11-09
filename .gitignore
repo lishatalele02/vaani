@@ -1,0 +1,13 @@
+backend/.env
+backend/.venv/
+backend/__pycache__/
+**/__pycache__/
+*.sqlite3*
+backend/models/*.joblib
+backend/check_tts.wav
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.kotlin/
+.idea/

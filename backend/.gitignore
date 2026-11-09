@@ -1,0 +1,13 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+models/*.joblib
+.pytest_cache/
+
+eval_audio/
+results_keyterms.md

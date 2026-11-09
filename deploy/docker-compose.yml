@@ -1,0 +1,25 @@
+# HTTPS backend in one command (needs a domain pointing at the server, ports 80/443 open):
+#   cp ../backend/.env.example ../backend/.env   # fill in GNANI_API_KEY and REGISTRATION_CODE
+#   DOMAIN=samajh.example.com docker compose up -d --build
+services:
+  api:
+    build: ../backend
+    env_file: ../backend/.env
+    environment:
+      REQUIRE_ACCESS_CODE: "true"      # refuses to start without an access code
+    volumes:
+      - samajh-data:/data
+    restart: unless-stopped
+  caddy:
+    image: caddy:2
+    ports: ["80:80", "443:443"]
+    environment:
+      DOMAIN: ${DOMAIN:?set DOMAIN=your.domain}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+    depends_on: [api]
+    restart: unless-stopped
+volumes:
+  samajh-data:
+  caddy-data:

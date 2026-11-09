@@ -1,0 +1,449 @@
+﻿text,intent,language_group,synthetic
+I need water,request_water,en,yes
+Please give me water,request_water,en,yes
+I am thirsty,request_water,en,yes
+Can I have some water,request_water,en,yes
+Bring me a glass of water,request_water,en,yes
+I want to drink water,request_water,en,yes
+Water please,request_water,en,yes
+मुझे पानी चाहिए,request_water,hi,yes
+पानी दे दो,request_water,hi,yes
+मुझे प्यास लगी है,request_water,hi,yes
+थोड़ा पानी लाओ,request_water,hi,yes
+mujhe paani chahiye,request_water,hi,yes
+paani do,request_water,hi,yes
+pyaas lagi hai,request_water,hi,yes
+thoda pani dena,request_water,hi,yes
+मला पाणी पाहिजे,request_water,mr,yes
+पाणी द्या,request_water,mr,yes
+मला तहान लागली आहे,request_water,mr,yes
+थोडं पाणी आणा,request_water,mr,yes
+mala pani pahije,request_water,mr,yes
+pani dya,request_water,mr,yes
+tahan lagli ahe,request_water,mr,yes
+mala pani de,request_water,mr,yes
+I am hungry,request_food,en,yes
+I need food,request_food,en,yes
+Please give me something to eat,request_food,en,yes
+I want to eat,request_food,en,yes
+Bring me my meal,request_food,en,yes
+Can I have food,request_food,en,yes
+Food please,request_food,en,yes
+मुझे भूख लगी है,request_food,hi,yes
+खाना दो,request_food,hi,yes
+मुझे खाना चाहिए,request_food,hi,yes
+कुछ खाने को दो,request_food,hi,yes
+mujhe bhookh lagi hai,request_food,hi,yes
+khana do,request_food,hi,yes
+mujhe khana chahiye,request_food,hi,yes
+kuch khane ko do,request_food,hi,yes
+मला भूक लागली आहे,request_food,mr,yes
+मला जेवण पाहिजे,request_food,mr,yes
+जेवायला द्या,request_food,mr,yes
+काहीतरी खायला द्या,request_food,mr,yes
+mala bhook lagli ahe,request_food,mr,yes
+mala jevan pahije,request_food,mr,yes
+jevayla dya,request_food,mr,yes
+khayla dya,request_food,mr,yes
+Please help me,request_help,en,yes
+I need help,request_help,en,yes
+Help me,request_help,en,yes
+Can someone help me,request_help,en,yes
+I need assistance,request_help,en,yes
+Somebody help,request_help,en,yes
+Please come here and help,request_help,en,yes
+मेरी मदद करो,request_help,hi,yes
+मुझे मदद चाहिए,request_help,hi,yes
+कोई मदद करो,request_help,hi,yes
+मुझे सहायता चाहिए,request_help,hi,yes
+meri madad karo,request_help,hi,yes
+mujhe madad chahiye,request_help,hi,yes
+koi help karo,request_help,hi,yes
+help chahiye,request_help,hi,yes
+मला मदत हवी,request_help,mr,yes
+माझी मदत करा,request_help,mr,yes
+कोणीतरी मदत करा,request_help,mr,yes
+मला सहाय्य पाहिजे,request_help,mr,yes
+mala madat havi,request_help,mr,yes
+majhi madat kara,request_help,mr,yes
+konitari madat kara,request_help,mr,yes
+mala help pahije,request_help,mr,yes
+I need to use the bathroom,request_bathroom,en,yes
+Take me to the toilet,request_bathroom,en,yes
+I need the washroom,request_bathroom,en,yes
+I have to go to the toilet,request_bathroom,en,yes
+Bathroom please,request_bathroom,en,yes
+I want to go to the restroom,request_bathroom,en,yes
+Help me to the toilet,request_bathroom,en,yes
+मुझे बाथरूम जाना है,request_bathroom,hi,yes
+मुझे शौचालय जाना है,request_bathroom,hi,yes
+टॉयलेट ले चलो,request_bathroom,hi,yes
+मुझे वॉशरूम ले चलो,request_bathroom,hi,yes
+mujhe bathroom jana hai,request_bathroom,hi,yes
+toilet jana hai,request_bathroom,hi,yes
+mujhe washroom le chalo,request_bathroom,hi,yes
+bathroom jaana hai,request_bathroom,hi,yes
+मला बाथरूमला जायचे आहे,request_bathroom,mr,yes
+मला संडासला जायचंय,request_bathroom,mr,yes
+टॉयलेटला घेऊन चला,request_bathroom,mr,yes
+मला स्वच्छतागृहात जायचे आहे,request_bathroom,mr,yes
+mala bathroom la jayche ahe,request_bathroom,mr,yes
+mala toilet la jayche ahe,request_bathroom,mr,yes
+mala sandas la jayche,request_bathroom,mr,yes
+washroom la ghevun chala,request_bathroom,mr,yes
+I am in pain,express_pain,en,yes
+It hurts,express_pain,en,yes
+I have pain,express_pain,en,yes
+My body is paining,express_pain,en,yes
+It hurts a lot here,express_pain,en,yes
+I feel severe pain,express_pain,en,yes
+My head hurts,express_pain,en,yes
+मुझे दर्द हो रहा है,express_pain,hi,yes
+बहुत दर्द है,express_pain,hi,yes
+यहाँ दर्द हो रहा है,express_pain,hi,yes
+मेरा सिर दर्द कर रहा है,express_pain,hi,yes
+mujhe dard ho raha hai,express_pain,hi,yes
+bahut dard hai,express_pain,hi,yes
+yaha dard ho raha hai,express_pain,hi,yes
+sar dard kar raha hai,express_pain,hi,yes
+मला दुखत आहे,express_pain,mr,yes
+खूप वेदना होत आहेत,express_pain,mr,yes
+इथे दुखतंय,express_pain,mr,yes
+माझं डोकं दुखतंय,express_pain,mr,yes
+mala dukhat ahe,express_pain,mr,yes
+khup vedna hot aahet,express_pain,mr,yes
+ithe dukhtay,express_pain,mr,yes
+majhe doke dukhtay,express_pain,mr,yes
+I need my medicine,request_medicine,en,yes
+Give me my tablet,request_medicine,en,yes
+It is time for my medicine,request_medicine,en,yes
+Please bring my pills,request_medicine,en,yes
+I want to take my medicine,request_medicine,en,yes
+Where is my medicine,request_medicine,en,yes
+Medicine please,request_medicine,en,yes
+मुझे मेरी दवा चाहिए,request_medicine,hi,yes
+दवा दो,request_medicine,hi,yes
+मेरी गोली दो,request_medicine,hi,yes
+दवा का समय हो गया,request_medicine,hi,yes
+mujhe meri dawai chahiye,request_medicine,hi,yes
+dawa do,request_medicine,hi,yes
+meri goli do,request_medicine,hi,yes
+dawai ka time ho gaya,request_medicine,hi,yes
+मला माझे औषध हवे,request_medicine,mr,yes
+औषध द्या,request_medicine,mr,yes
+माझी गोळी द्या,request_medicine,mr,yes
+औषधाची वेळ झाली,request_medicine,mr,yes
+mala maze aushadh have,request_medicine,mr,yes
+aushadh dya,request_medicine,mr,yes
+majhi goli dya,request_medicine,mr,yes
+aushadhachi vel zali,request_medicine,mr,yes
+I need to rest,request_rest,en,yes
+I want to lie down,request_rest,en,yes
+I am tired,request_rest,en,yes
+Let me rest for a while,request_rest,en,yes
+I feel exhausted,request_rest,en,yes
+I need some rest,request_rest,en,yes
+I want to sit down,request_rest,en,yes
+मुझे आराम करना है,request_rest,hi,yes
+मैं थक गया हूँ,request_rest,hi,yes
+मुझे लेटना है,request_rest,hi,yes
+थोड़ा आराम करने दो,request_rest,hi,yes
+mujhe aaram karna hai,request_rest,hi,yes
+main thak gaya hoon,request_rest,hi,yes
+mujhe letna hai,request_rest,hi,yes
+thoda aaram karne do,request_rest,hi,yes
+मला विश्रांती घ्यायची आहे,request_rest,mr,yes
+मी थकलो आहे,request_rest,mr,yes
+मला पडायचे आहे,request_rest,mr,yes
+थोडा आराम करू दे,request_rest,mr,yes
+mala vishranti ghyaychi ahe,request_rest,mr,yes
+mi thakalo ahe,request_rest,mr,yes
+mala aaram karaycha ahe,request_rest,mr,yes
+thoda aaram karu de,request_rest,mr,yes
+I want to sleep,request_sleep,en,yes
+I am sleepy,request_sleep,en,yes
+I need to go to bed,request_sleep,en,yes
+It is time for me to sleep,request_sleep,en,yes
+Turn off the lights I want to sleep,request_sleep,en,yes
+I feel sleepy,request_sleep,en,yes
+Good night I am going to sleep,request_sleep,en,yes
+मुझे सोना है,request_sleep,hi,yes
+मुझे नींद आ रही है,request_sleep,hi,yes
+मुझे सोने जाना है,request_sleep,hi,yes
+लाइट बंद करो मुझे सोना है,request_sleep,hi,yes
+mujhe sona hai,request_sleep,hi,yes
+mujhe neend aa rahi hai,request_sleep,hi,yes
+mujhe sone jana hai,request_sleep,hi,yes
+light band karo mujhe sona hai,request_sleep,hi,yes
+मला झोपायचे आहे,request_sleep,mr,yes
+मला झोप येत आहे,request_sleep,mr,yes
+मला झोपायला जायचे आहे,request_sleep,mr,yes
+लाईट बंद करा मला झोपायचे आहे,request_sleep,mr,yes
+mala zopaychay,request_sleep,mr,yes
+mala zop yet ahe,request_sleep,mr,yes
+mala zopayla jayche ahe,request_sleep,mr,yes
+light band kara mala zopaychay,request_sleep,mr,yes
+I feel uncomfortable,express_discomfort,en,yes
+I am not comfortable,express_discomfort,en,yes
+This is uncomfortable,express_discomfort,en,yes
+I feel restless,express_discomfort,en,yes
+Something feels wrong,express_discomfort,en,yes
+I am not feeling well,express_discomfort,en,yes
+I feel uneasy,express_discomfort,en,yes
+मुझे बेचैनी हो रही है,express_discomfort,hi,yes
+मुझे ठीक नहीं लग रहा,express_discomfort,hi,yes
+मुझे असहज लग रहा है,express_discomfort,hi,yes
+यह आरामदायक नहीं है,express_discomfort,hi,yes
+mujhe bechaini ho rahi hai,express_discomfort,hi,yes
+mujhe theek nahi lag raha,express_discomfort,hi,yes
+mujhe asahaj lag raha hai,express_discomfort,hi,yes
+yeh aaramdayak nahi hai,express_discomfort,hi,yes
+मला अस्वस्थ वाटत आहे,express_discomfort,mr,yes
+मला बरे वाटत नाही,express_discomfort,mr,yes
+मला अवघडल्यासारखे वाटते,express_discomfort,mr,yes
+हे सोयीचे नाही,express_discomfort,mr,yes
+mala asvasth vatat ahe,express_discomfort,mr,yes
+mala bare vatat nahi,express_discomfort,mr,yes
+mala avghadlyasarkhe vatte,express_discomfort,mr,yes
+he soyiche nahi,express_discomfort,mr,yes
+Please call my family,request_family,en,yes
+I want to see my family,request_family,en,yes
+Call my son,request_family,en,yes
+I want to talk to my daughter,request_family,en,yes
+Please contact my relatives,request_family,en,yes
+Bring my family here,request_family,en,yes
+I want my family,request_family,en,yes
+मेरे परिवार को बुलाओ,request_family,hi,yes
+मुझे अपने घरवालों से बात करनी है,request_family,hi,yes
+मेरे बेटे को फोन करो,request_family,hi,yes
+परिवार को बुलाओ,request_family,hi,yes
+mere parivar ko bulao,request_family,hi,yes
+mujhe ghar walon se baat karni hai,request_family,hi,yes
+mere bete ko phone karo,request_family,hi,yes
+family ko call karo,request_family,hi,yes
+माझ्या कुटुंबाला बोलवा,request_family,mr,yes
+मला घरच्यांशी बोलायचे आहे,request_family,mr,yes
+माझ्या मुलाला फोन करा,request_family,mr,yes
+कुटुंबाला कळवा,request_family,mr,yes
+majhya kutumbala bolva,request_family,mr,yes
+mala gharchyanshi bolaycha ahe,request_family,mr,yes
+majhya mulala phone kara,request_family,mr,yes
+family la call kara,request_family,mr,yes
+This is an emergency,request_emergency_help,en,yes
+I need urgent help,request_emergency_help,en,yes
+Call an ambulance,request_emergency_help,en,yes
+Emergency please come quickly,request_emergency_help,en,yes
+I need help right now it is serious,request_emergency_help,en,yes
+Please call 108 now,request_emergency_help,en,yes
+Save me quickly,request_emergency_help,en,yes
+यह इमरजेंसी है,request_emergency_help,hi,yes
+मुझे तुरंत मदद चाहिए,request_emergency_help,hi,yes
+एम्बुलेंस बुलाओ,request_emergency_help,hi,yes
+जल्दी आओ बहुत जरूरी है,request_emergency_help,hi,yes
+yeh emergency hai,request_emergency_help,hi,yes
+mujhe turant madad chahiye,request_emergency_help,hi,yes
+ambulance bulao,request_emergency_help,hi,yes
+jaldi aao bahut zaroori hai,request_emergency_help,hi,yes
+ही आणीबाणी आहे,request_emergency_help,mr,yes
+मला तातडीने मदत हवी,request_emergency_help,mr,yes
+रुग्णवाहिका बोलवा,request_emergency_help,mr,yes
+लवकर या खूप गरजेचे आहे,request_emergency_help,mr,yes
+hi anibani ahe,request_emergency_help,mr,yes
+mala tatadine madat havi,request_emergency_help,mr,yes
+ambulance bolva,request_emergency_help,mr,yes
+lavkar ya khup garajeche ahe,request_emergency_help,mr,yes
+I need a doctor,request_doctor,en,yes
+Please call the doctor,request_doctor,en,yes
+I want to see a doctor,request_doctor,en,yes
+Take me to the hospital,request_doctor,en,yes
+I need medical attention,request_doctor,en,yes
+Bring the doctor,request_doctor,en,yes
+Doctor please,request_doctor,en,yes
+मुझे डॉक्टर चाहिए,request_doctor,hi,yes
+डॉक्टर को बुलाओ,request_doctor,hi,yes
+मुझे अस्पताल ले चलो,request_doctor,hi,yes
+डॉक्टर को दिखाना है,request_doctor,hi,yes
+mujhe doctor chahiye,request_doctor,hi,yes
+doctor ko bulao,request_doctor,hi,yes
+mujhe hospital le chalo,request_doctor,hi,yes
+doctor ko dikhana hai,request_doctor,hi,yes
+मला डॉक्टर हवे,request_doctor,mr,yes
+डॉक्टरांना बोलवा,request_doctor,mr,yes
+मला दवाखान्यात घेऊन चला,request_doctor,mr,yes
+डॉक्टरांना दाखवायचे आहे,request_doctor,mr,yes
+mala doctor have,request_doctor,mr,yes
+doctorna bolva,request_doctor,mr,yes
+mala davakhanyat ghevun chala,request_doctor,mr,yes
+doctorna dakhvayche ahe,request_doctor,mr,yes
+I am happy,express_happiness,en,yes
+I feel very good today,express_happiness,en,yes
+I am so glad,express_happiness,en,yes
+This makes me happy,express_happiness,en,yes
+I feel great,express_happiness,en,yes
+I am feeling joyful,express_happiness,en,yes
+Thank you I am happy,express_happiness,en,yes
+मैं खुश हूँ,express_happiness,hi,yes
+आज मुझे बहुत अच्छा लग रहा है,express_happiness,hi,yes
+मुझे बहुत खुशी हो रही है,express_happiness,hi,yes
+मैं बहुत खुश हूँ,express_happiness,hi,yes
+main khush hoon,express_happiness,hi,yes
+aaj mujhe bahut accha lag raha hai,express_happiness,hi,yes
+mujhe bahut khushi ho rahi hai,express_happiness,hi,yes
+main bahut khush hoon,express_happiness,hi,yes
+मी आनंदी आहे,express_happiness,mr,yes
+आज मला खूप छान वाटतंय,express_happiness,mr,yes
+मला खूप आनंद झाला,express_happiness,mr,yes
+मी खूप खुश आहे,express_happiness,mr,yes
+mi anandi ahe,express_happiness,mr,yes
+aaj mala khup chan vatatay,express_happiness,mr,yes
+mala khup anand zala,express_happiness,mr,yes
+mi khup khush ahe,express_happiness,mr,yes
+I am sad,express_sadness,en,yes
+I feel very low,express_sadness,en,yes
+I feel like crying,express_sadness,en,yes
+I am feeling depressed,express_sadness,en,yes
+I am unhappy,express_sadness,en,yes
+I feel lonely and sad,express_sadness,en,yes
+I am upset,express_sadness,en,yes
+मैं उदास हूँ,express_sadness,hi,yes
+मुझे बहुत बुरा लग रहा है,express_sadness,hi,yes
+मुझे रोना आ रहा है,express_sadness,hi,yes
+मैं दुखी हूँ,express_sadness,hi,yes
+main udaas hoon,express_sadness,hi,yes
+mujhe bahut bura lag raha hai,express_sadness,hi,yes
+mujhe rona aa raha hai,express_sadness,hi,yes
+main dukhi hoon,express_sadness,hi,yes
+मी दुःखी आहे,express_sadness,mr,yes
+मला खूप वाईट वाटतंय,express_sadness,mr,yes
+मला रडू येत आहे,express_sadness,mr,yes
+मी उदास आहे,express_sadness,mr,yes
+mi dukhi ahe,express_sadness,mr,yes
+mala khup vait vatatay,express_sadness,mr,yes
+mala radu yet ahe,express_sadness,mr,yes
+mi udas ahe,express_sadness,mr,yes
+I am scared,express_fear,en,yes
+I feel afraid,express_fear,en,yes
+I am frightened,express_fear,en,yes
+I am very scared,express_fear,en,yes
+I feel fear,express_fear,en,yes
+This scares me,express_fear,en,yes
+I am anxious and afraid,express_fear,en,yes
+मुझे डर लग रहा है,express_fear,hi,yes
+मैं डर गया हूँ,express_fear,hi,yes
+मुझे बहुत डर लग रहा है,express_fear,hi,yes
+मुझे घबराहट हो रही है,express_fear,hi,yes
+mujhe dar lag raha hai,express_fear,hi,yes
+main dar gaya hoon,express_fear,hi,yes
+mujhe bahut dar lag raha hai,express_fear,hi,yes
+mujhe ghabrahat ho rahi hai,express_fear,hi,yes
+मला भीती वाटते,express_fear,mr,yes
+मी घाबरलो आहे,express_fear,mr,yes
+मला खूप भीती वाटत आहे,express_fear,mr,yes
+मला घाबरल्यासारखे वाटते,express_fear,mr,yes
+mala bhiti vatte,express_fear,mr,yes
+mi ghabarlo ahe,express_fear,mr,yes
+mala khup bhiti vatat ahe,express_fear,mr,yes
+mala ghabaralyasarkhe vatte,express_fear,mr,yes
+Please wait,request_wait,en,yes
+Wait a moment,request_wait,en,yes
+Give me a minute,request_wait,en,yes
+Hold on,request_wait,en,yes
+Just a second,request_wait,en,yes
+Wait for me,request_wait,en,yes
+Please be patient,request_wait,en,yes
+रुको,request_wait,hi,yes
+थोड़ा रुकिए,request_wait,hi,yes
+एक मिनट ठहरो,request_wait,hi,yes
+मेरा इंतज़ार करो,request_wait,hi,yes
+ruko,request_wait,hi,yes
+thoda ruko,request_wait,hi,yes
+ek minute ruko,request_wait,hi,yes
+mera intezaar karo,request_wait,hi,yes
+थांबा,request_wait,mr,yes
+थोडा थांबा,request_wait,mr,yes
+एक मिनिट थांबा,request_wait,mr,yes
+माझी वाट पहा,request_wait,mr,yes
+thamba,request_wait,mr,yes
+thoda thamba,request_wait,mr,yes
+ek minit thamba,request_wait,mr,yes
+majhi vaat paha,request_wait,mr,yes
+I want to go home,request_go_home,en,yes
+Take me home,request_go_home,en,yes
+I want to return home,request_go_home,en,yes
+Please send me home,request_go_home,en,yes
+I want to leave and go home,request_go_home,en,yes
+Let me go home,request_go_home,en,yes
+Home please,request_go_home,en,yes
+मुझे घर जाना है,request_go_home,hi,yes
+मुझे घर ले चलो,request_go_home,hi,yes
+मैं घर वापस जाना चाहता हूँ,request_go_home,hi,yes
+घर भेज दो,request_go_home,hi,yes
+mujhe ghar jana hai,request_go_home,hi,yes
+mujhe ghar le chalo,request_go_home,hi,yes
+main ghar wapas jana chahta hoon,request_go_home,hi,yes
+ghar bhej do,request_go_home,hi,yes
+मला घरी जायचे आहे,request_go_home,mr,yes
+मला घरी घेऊन चला,request_go_home,mr,yes
+मला घरी परत जायचे आहे,request_go_home,mr,yes
+मला घरी पाठवा,request_go_home,mr,yes
+mala ghari jayche ahe,request_go_home,mr,yes
+mala ghari ghevun chala,request_go_home,mr,yes
+mala ghari parat jayche ahe,request_go_home,mr,yes
+mala ghari pathva,request_go_home,mr,yes
+I need to go outside,request_go_outside,en,yes
+Take me outside,request_go_outside,en,yes
+I want some fresh air,request_go_outside,en,yes
+I want to go out,request_go_outside,en,yes
+Let me step outside,request_go_outside,en,yes
+Open the door I want to go out,request_go_outside,en,yes
+Outside please,request_go_outside,en,yes
+मुझे बाहर जाना है,request_go_outside,hi,yes
+मुझे बाहर ले चलो,request_go_outside,hi,yes
+मुझे ताज़ी हवा चाहिए,request_go_outside,hi,yes
+दरवाजा खोलो मुझे बाहर जाना है,request_go_outside,hi,yes
+mujhe bahar jana hai,request_go_outside,hi,yes
+mujhe bahar le chalo,request_go_outside,hi,yes
+mujhe taazi hawa chahiye,request_go_outside,hi,yes
+darwaza kholo mujhe bahar jana hai,request_go_outside,hi,yes
+मला बाहेर जायचे आहे,request_go_outside,mr,yes
+मला बाहेर घेऊन चला,request_go_outside,mr,yes
+मला ताजी हवा हवी,request_go_outside,mr,yes
+दार उघडा मला बाहेर जायचे आहे,request_go_outside,mr,yes
+mala bahere jayche ahe,request_go_outside,mr,yes
+mala bahere ghevun chala,request_go_outside,mr,yes
+mala taji hava havi,request_go_outside,mr,yes
+dar ughda mala bahere jayche ahe,request_go_outside,mr,yes
+hello,other_unclear,en,yes
+hello testing one two three,other_unclear,en,yes
+what is the time,other_unclear,en,yes
+how is the weather today,other_unclear,en,yes
+okay,other_unclear,en,yes
+good morning,other_unclear,en,yes
+thank you,other_unclear,en,yes
+tell me a story,other_unclear,en,yes
+what is your name,other_unclear,en,yes
+the television is on,other_unclear,en,yes
+hmm,other_unclear,en,yes
+I do not know,other_unclear,en,yes
+maybe later,other_unclear,en,yes
+see you tomorrow,other_unclear,en,yes
+नमस्ते,other_unclear,hi,yes
+आज मौसम कैसा है,other_unclear,hi,yes
+समय क्या हुआ है,other_unclear,hi,yes
+ठीक है,other_unclear,hi,yes
+namaste,other_unclear,hi,yes
+aaj mausam kaisa hai,other_unclear,hi,yes
+samay kya hua hai,other_unclear,hi,yes
+theek hai,other_unclear,hi,yes
+kuch nahi,other_unclear,hi,yes
+pata nahi,other_unclear,hi,yes
+नमस्कार,other_unclear,mr,yes
+आज हवामान कसे आहे,other_unclear,mr,yes
+किती वाजले,other_unclear,mr,yes
+ठीक आहे,other_unclear,mr,yes
+namaskar,other_unclear,mr,yes
+aaj havaman kase ahe,other_unclear,mr,yes
+kiti vajle,other_unclear,mr,yes
+theek ahe,other_unclear,mr,yes
+kahi nahi,other_unclear,mr,yes
+mala mahit nahi,other_unclear,mr,yes

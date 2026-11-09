@@ -1,0 +1,1 @@
+"""Samajh Sakhi backend."""

@@ -4,13 +4,36 @@ Built for **The Great Indian AI Internship Challenge by Gnani AI**.
 
 > Understand the user's intended meaning, **confirm** it, and help them communicate it clearly.
 
-Samajh Sakhi listens (Gnani **Prisma** STT), works out what the person means, asks them to confirm or correct it,
+Vaani listens (Gnani **Prisma** STT), works out what the person means, asks them to confirm or correct it,
 and then says the message out loud in a natural voice (Gnani **Timbre** TTS). Big offline **Quick Cards** cover the
 cases where speaking is hard. It is an assistive communication tool, **not** a medical device.
 
 ---
 
-## 1. What is in this ZIP
+## Who Vaani is for
+
+Vaani helps people who find it hard to get their words out clearly, or who struggle to be understood.
+
+**Speech and language conditions, where speaking can be slow, unclear or effortful**
+* **Aphasia** (often after a stroke or brain injury): the person knows what they want to say but cannot find or form the words
+* **Dysarthria** (slurred or weak speech), seen with **Parkinson's disease, cerebral palsy, ALS (motor neurone disease), multiple sclerosis** and after stroke
+* **Apraxia of speech**: difficulty planning the mouth movements for words
+* **Stammering / stuttering**: repeated sounds, blocks and long pauses
+* **Speech delay** and speech difficulties linked to conditions such as **Down syndrome** or **autism**
+* **Voice loss** after illness, surgery or injury (for example after throat or larynx surgery), and **elderly people** whose speech has become weak or unclear
+
+**People who stop or freeze while speaking, even without a medical condition**
+* People with **low confidence or social anxiety** who stop mid-sentence or avoid speaking
+* **Selective mutism** and extreme shyness, where speaking in some places or to some people feels impossible
+* Speakers who are afraid of being **misunderstood**, for example because of an accent, a regional dialect or mixing languages
+
+**How Vaani helps:** the person says as much as they can, even a few unclear words. Vaani works out the likely meaning and shows it. The person **confirms or corrects it**, and Vaani then says the message aloud in a clear voice, in Marathi, Hindi or English. Quick messages and the Emergency screen help when speaking is too hard, and caregivers can be given access only if the person chooses.
+
+**What Vaani is not:** it is a communication aid, not a treatment, therapy or medical device, and it does not diagnose anything. It has **not** been clinically validated or tested with people who have these conditions. Its meaning model is trained on a small synthetic dataset, which is why every message needs the person's confirmation. Speech recognition may work less well on very unclear speech. Testing with real users and speech-language professionals is the next step.
+
+---
+
+## 1. Project layout
 
 ```
 SamajhSakhi/
@@ -26,9 +49,9 @@ SamajhSakhi/
 
 | Part | Status |
 |---|---|
-| Backend logic, API, database, intent engine, caregiver consent, WAV repair, Prisma v3.0 / Timbre v3.0 request building, keyterms, audio-tag styles, SSE streaming | **Tested**: 34 automated tests pass (`pytest`) |
+| Backend logic, API, database, intent engine, caregiver consent, WAV repair, Prisma v3.0 / Timbre v3.0 request building, keyterms, audio-tag styles, SSE streaming | **Tested**: 38 automated backend tests pass (`pytest`) |
 | Gnani Prisma / Timbre calls | Request format follows the current Gnani docs (Prisma v3.0, Timbre v3.0, TTS SSE). Tests **mock** the Gnani HTTP call. **Not run live** against Gnani from here. Run `python scripts/check_gnani.py` once with your key to confirm |
-| Android app | Earlier versions were built and run on a phone. **The latest changes (translate to Marathi/Hindi/English, voice styles, offline messages, emergency screen, high contrast, home ordering) have not been compiled here** (no Android SDK). Build it in Android Studio; if Gradle shows errors, send me the text |
+| Android app | Earlier versions were built and run on a phone. **The latest changes (translate to Marathi/Hindi/English, voice styles, offline messages, emergency screen, high contrast, home ordering) have not been compiled here** (no Android SDK). Build it in Android Studio before relying on it; open an issue with the Gradle error text if the build fails |
 | Not built yet | Voice cloning, realtime live captions, Android playback of the streaming TTS endpoint, picture cards. See section 11 |
 | Gnani **Evon** (LLM) | **Not integrated.** No verified API contract or access, so nothing was invented. Interpretation uses local ML + rules |
 | ML model | Trained on a small **synthetic** dataset (see section 8) |
@@ -168,7 +191,7 @@ Quick-card flow: card → (edit) → Timbre → play.
 
 ## 6. Gnani AI integration
 
-| Gnani API | Exact version / endpoint | How Samajh Sakhi uses it |
+| Gnani API | Exact version / endpoint | How Vaani uses it |
 |---|---|---|
 | **Prisma** speech-to-text | `model=prisma-v3.0`, `POST https://api.vachana.ai/stt/v3` (multipart: `audio_file`, `language_code`, `format=transcribe`, `keyterms`) | Voice → text. Marathi speakers send only `mr-IN` (very short Marathi can be tagged Hindi because both use Devanagari). Hinglish sends `hi-IN,en-IN`. The API also accepts `indic-auto` (the app no longer offers it). The user's saved phrases, name and emergency contact go in as `keyterms` (max 200). `itn_native_numerals` is not sent (no effect on v3.0) |
 | **Timbre** text-to-speech | `model=timbre-v3.0`, `POST https://api.vachana.ai/api/v1/tts/inference` | Text → voice. 13 voices that each speak all 10 languages (default `Shivani`). Voices differ between timbre-v2.5 and v3.0, so an old saved v2.5 voice falls back to the default. Languages used: `mr-IN`, `hi-IN`, `en-IN`, `hi-en` |
@@ -254,7 +277,7 @@ Manual checklist: `docs/TEST_CHECKLIST.md`.
 
 ## 11. Limitations
 * The latest Android changes are uncompiled; Gnani calls not exercised live (see status).
-* **Not built:** voice cloning ("speak in my own voice"; needs consent, secure storage, deletion and a look at Gnani's credit cost first), Prisma realtime live captions, Android playback of the streaming TTS endpoint, picture cards, languages beyond Marathi/Hindi/English for the meaning step (Prisma can hear them in Any language mode, but meanings are only checked for those three and the app warns).
+* **Not built:** voice cloning ("speak in my own voice"; needs consent, secure storage, deletion and a look at Gnani's credit cost first), Prisma realtime live captions, Android playback of the streaming TTS endpoint, picture cards, languages beyond Marathi/Hindi/English for the meaning step (Prisma can hear other Indian languages through the API's `indic-auto` mode, but the app does not offer it and meanings are only checked for those three).
 * Real-user results are not included yet: `docs/RESULTS.md` is a template to fill from your own consented sessions. Do not quote numbers from it until you have measured them.
 * Evon not integrated. Intent set is small (18). Hindi/Marathi message wording should be reviewed by native speakers.
 * The classifier is trained on synthetic data and may misread real, unclear speech — that is why confirmation is mandatory.
